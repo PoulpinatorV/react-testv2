@@ -28,9 +28,9 @@ class Clock extends React.Component {
     }
   
     tick() {
-        let rando = this.getRandomInt(11);
+        let rando = this.getRandomInt(20);
         while(this.state.rand === rando){
-            rando = this.getRandomInt(11);
+            rando = this.getRandomInt(20);
         }
         this.setState({
           date: new Date(),
@@ -43,7 +43,8 @@ class Clock extends React.Component {
       return ( 
         <div> 
             <div> {this.state.date.toLocaleDateString()} </div>
-            <div> {this.state.tradu} {this.state.date.toLocaleTimeString()} </div>
+            <div> {this.state.tradu} </div>
+            <div>{this.state.date.toLocaleTimeString()} </div>
         </div>
       )
     }
