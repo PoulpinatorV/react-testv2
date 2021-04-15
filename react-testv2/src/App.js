@@ -2,6 +2,7 @@ import logo from './logo.svg';
 import './App.css';
 import Clock from './clock';
 import Canvas from './canvas'
+import FilePreview from './file'
 
 
 function App() {
@@ -11,6 +12,7 @@ function App() {
         {/* <img src={logo} className="App-logo" alt="logo" /> */}
         <Canvas/>
         <Clock />
+        <FilePreview/>
         
       </header>
     </div>
